@@ -168,6 +168,9 @@ dalvik.vm.image-dex2oat-threads=8
 dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
 
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # Display
 persist.sys.sf.color_mode=9
 persist.sys.sf.color_saturation=1.0
