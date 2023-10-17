@@ -280,12 +280,6 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::ITouchFeature/default</fqname>
     </hal>
-
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.displayfeature</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IDisplayFeature/default</fqname>
-    </hal>
 	<hal format="hidl">
 		<name>vendor.qti.ims.callinfo</name>
 		<transport>hwbinder</transport>
@@ -296,5 +290,4 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::IImsFactory/default</fqname>
   	</hal>
-
 </manifest>
