@@ -195,6 +195,10 @@ vendor.display.qdcm.mode_combine=1
 vendor.display.use_smooth_motion=0
 debug.sdm.support_writeback=0
 debug.sf.enable_egl_image_tracker=0
+debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
+debug.sf.high_fps_early_phase_offset_ns=-4000000
+debug.sf.high_fps_late_app_phase_offset_ns=1000000
+debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
 
 # Display HDR10
 vendor.display.enable_hdr10_gpu_target=1
