@@ -294,15 +294,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "PMQoSCpuDmaLatency",
-      "Path": "/dev/cpu_dma_latency",
-      "Values": [
-        "2c",
-        "100"
-      ],
-      "HoldFd": true
-    },
-    {
       "Name": "F2fsRecessModeEnable",
       "Path": "/dev/sys/fs/by-name/userdata/gc_urgent",
       "Values": [
@@ -554,10 +545,22 @@
       "Value": "2"
     },
     {
+      "PowerHint": "AUDIO_LAUNCH",
+      "Node": "PMQoSCpuDmaLatency",
+      "Duration": 0,
+      "Value": "2c"
+    },
+    {
       "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
       "Node": "PowerHALAudioState",
       "Duration": 0,
       "Value": "AUDIO_STREAMING_LOW_LATENCY"
+    },
+    {
+      "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
+      "Node": "PMQoSCpuDmaLatency",
+      "Duration": 0,
+      "Value": "2c"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -576,6 +579,12 @@
       "Node": "GPUMaxFreq",
       "Duration": 0,
       "Value": "0"
+    },
+    {
+      "PowerHint": "ML_ACC",
+      "Node": "PMQoSCpuDmaLatency",
+      "Duration": 2000,
+      "Value": "2c"
     },
     {
       "PowerHint": "FIXED_PERFORMANCE",
